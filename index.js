@@ -37,6 +37,7 @@ require("./events/message.js")
 require("./events/ready.js")
 require("./events/triggers.js")
 require("./events/interactionCreate.js")
+require("./deploy-commands.js")
 
 client.login(config.token || process.env.TOKEN).catch(e => {
 console.log("The Bot Token You Entered Into Your Project Is Incorrect Or Your Bot's INTENTS Are OFF!")

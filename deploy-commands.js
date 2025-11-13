@@ -15,7 +15,7 @@ for (const file of slashCommandFiles) {
 }
 
 const token = config.token || process.env.TOKEN;
-const clientId = process.env.CLIENT_ID;
+const clientId = config.clientId || process.env.CLIENT_ID;
 
 if (!token) {
   console.error('❌ Bot token is missing! Please set TOKEN in config.js or environment variables.');

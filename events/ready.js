@@ -25,8 +25,8 @@ client.on("ready", () => {
                     return;
                 }
 
-                console.log(`// 🎀 ${props.help.name}.js Loaded! \\`);
-                console.log(`-------- 👾 ${files.length} Total Commands! ---------`);
+                console.log(`🎀 ${props.help.name}.js Loaded! `);
+
 
                 client.commands.set(props.help.name, props);
                 props.conf.aliases.forEach(alias => {
